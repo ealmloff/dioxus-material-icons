@@ -10,13 +10,13 @@ use dioxus::prelude::*;
 use dioxus_material_icons::{MaterialIcon, MaterialIconStylesheet, MaterialIconVariant};
 
 fn main() {
-    dioxus_desktop::launch(App);
+    dioxus::launch(App);
 }
 
-fn App(cx: Scope) -> Element {
-    let is_blue = use_state(&cx, || false);
+fn App() -> Element {
+    let is_blue = use_state(|| false);
 
-    cx.render(rsx!(
+    rsx!(
         MaterialIconStylesheet {
             // Uses the self-hosted approach
             variant: MaterialIconVariant::SelfHosted("examples/assets/MaterialIcons-Regular.ttf")
@@ -33,5 +33,5 @@ fn App(cx: Scope) -> Element {
                 rsx!(MaterialIcon { name: "home" })
             }
         }
-    ))
+    )
 }
