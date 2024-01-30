@@ -18,4 +18,3 @@ path = "examples/button.rs"
 
 [dependencies]
 dioxus-lib = { git = "https://github.com/ealmloff/dioxus", branch = "breaking" }
-manganis = { git = "https://github.com/DioxusLabs/collect-assets" }
