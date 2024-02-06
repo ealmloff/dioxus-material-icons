@@ -17,4 +17,4 @@ path = "examples/button.rs"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-dioxus-lib = { git = "https://github.com/ealmloff/dioxus", branch = "breaking" }
+dioxus-lib = { git = "https://github.com/dioxuslab/dioxus" }
